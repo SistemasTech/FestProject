@@ -9,14 +9,14 @@ session_destroy();
         function valida(forms) {
 
             if (forms.user.value == "") {
-                alert("Preencha o nome de usuário.");
+                alert("Preencha o seu nome de usuário.");
                 forms.user.focus();
                 return false;
             }
 
 
             if (forms.password.value == "") {
-                alert("Preencha a senha.");
+                alert("Preencha a sua senha.");
                 forms.password.focus();
                 return false;
             }
@@ -60,7 +60,7 @@ session_destroy();
                                 alert("Login ou senha incorreta")
                             </script>
                                <div class="alert alert-danger">
-                                    Erro a introduzir a Senha ou Utilizador.
+                                    Erro a introduzir a Senha ou Nome de Utilizador.
                                 </div> 
 
                             <?php
@@ -74,7 +74,7 @@ session_destroy();
                         } else {
                             ?>
                             <div class="alert alert-danger">
-                                Por favor entre com seu nome de usuário e palavra passe.
+                                Por favor entre com seu nome de usuário e sua palavra passe.
                             </div>
                         <?php } ?>
                         <form role="form" name="forms" onsubmit="return valida(this);" method="POST" action="inicio.php">
